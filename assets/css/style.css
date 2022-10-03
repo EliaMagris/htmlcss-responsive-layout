@@ -24,6 +24,10 @@ main{
     margin: auto;
 }
 
+.align-center{
+    text-align: center;
+}
+
 .container-main img{
     width: 80%;
 }
@@ -85,6 +89,46 @@ main{
     font-size: 4rem; 
     margin-bottom: 1.5rem;
 }
+
+/* inizio strategic planning */
+
+.strategic-planning{
+    color: white;
+    padding-top: 50px;
+}
+
+.strategic-planning p{
+    font-size: 0.9rem;
+    margin: 2rem 0;
+    line-height: 1.4rem;
+}
+
+.strategic-planning h2{
+    margin: 3rem 0 2rem 0;
+}
+
+.app-developement{
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.app-developement p{
+    font-style: italic;
+    margin: 1rem 0;
+    line-height: 1.6rem;
+}
+
+.app-developement h3{
+    margin-top: 1rem ;
+}
+
+.download-button i{
+    background-color: rgb(149,147,230);
+    padding: 15px;
+    border-radius: 100%;
+}
+
 
 @media screen and (max-width: 768px){
     .nav-list{
@@ -155,6 +199,28 @@ main{
     .second-card-row{
         flex-basis: calc(100% / 3.2);
     }
+
+    /* inizio seconda parte del main */
+
+    .planning{
+        display: flex;
+        align-items: end; 
+        justify-content: space-between;
+    }
+
+    .strategic-planning img{
+        text-align: left;
+    }
+
+    .strategic-planning{
+        flex-basis: 50%;
+    }
+
+    .app-developement{
+        flex-basis: 40%;
+    }
+
+
 
 }
 
