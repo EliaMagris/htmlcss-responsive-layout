@@ -15,6 +15,10 @@ header{
     z-index: 1;
 }
 
+main{
+    padding-top: 80px;
+}
+
 .container-main{
     width: 90%;
     margin: auto;
@@ -32,6 +36,54 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* INIZIO MAIN */
+
+.card-img{
+    background-color: rgb(181, 204, 245);
+    padding: 20px 20px 0 20px;
+    border-radius: 20px;
+    margin-bottom: 20px ;
+}
+
+.card-img h3{
+    color: rgb(70, 95, 235);
+}
+
+.card-img p{
+    line-height: 1.8rem;
+    margin: 1rem 0;
+}
+
+.fa-apple{
+    margin: 0 5px;
+}
+
+.img-appstore{
+    text-align: center;
+}
+
+.card-img button{
+    background-color: rgb(31, 95, 231);
+    padding: 0.6rem 0.9rem;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.little-card{
+    text-align: center;
+    padding: 10px;
+}
+
+.little-card i{
+    color:  rgb(31, 95, 231);
+    font-size: 4rem; 
+    margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 768px){
@@ -61,4 +113,85 @@ header{
         color: white;
         font-size: 0.9rem;
     }
+
+    /* fine header */
+    
+    .first-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img-appstore img{
+        width: 100%;
+    }
+
+    .first-card-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info-item-first-image{
+        width: 100%;
+    }
+
+    .img-appstore{
+        width: 100%;
+    }
+
+    .first-card-row{
+        flex-basis: 65%;
+    }
+
+    .second-card-row{
+        flex-basis: 30%;
+    }
+
+    .second-row{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2rem;
+    }
+
+    .second-card-row{
+        flex-basis: calc(100% / 3.2);
+    }
+
+}
+
+@media  screen and (min-width: 426px) and (max-width: 768px) {
+    .first-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .first-row img{
+        width: 65%;
+    }
+
+    .img-appstore{
+        text-align: left;
+    }
+
+    .first-row button{
+        width: 50%;
+    }
+
+
+    .first-card-row{
+        flex-basis: 65%;
+    }
+
+    .second-card-row{
+        flex-basis: 30%;
+    }
+
+    .second-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .second-card-row{
+        flex-basis: calc(100% / 3.2);
+    }
+
 }
