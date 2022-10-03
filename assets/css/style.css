@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-family: sans-serif;
+    border: none;
 }
 
 header{
@@ -73,7 +74,6 @@ main{
     padding: 0.6rem 0.9rem;
     color: white;
     border-radius: 20px;
-    border: none;
     width: 80%;
     margin: 20px 0;
     cursor: pointer;
@@ -179,6 +179,48 @@ main{
     padding: 15px 0;
 }
 
+/* benefits of working start */
+
+.card-benefits{
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.container-main > h2{
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    font-size: 1.9rem;
+}
+
+.card-benefits h2 {
+    color: rgb(149, 147, 230);
+    font-size: 2rem;
+}
+
+.card-benefits h3 {
+    color: rgb(149, 147, 230);
+    font-size: 1.3rem;
+    padding: 15px 0;
+}
+
+.card-benefits p{
+    line-height: 1.5rem;
+    padding: 0 0 15px 0;
+    color: rgb(22, 22, 22);
+    
+}
+
+.card-benefits button{
+    background-color: rgb(149, 147, 230) ;
+    font-size: 1rem;
+    padding: 7px 15px;
+    width: 50%;
+    border-radius: 50px;
+    color: white;
+}
 /* INIZIO MEDIA QUERY */
 
 
@@ -284,6 +326,23 @@ main{
         padding-left: 20px;
     }
 
+    /* inizio benefits of working */
+
+    .container-benefits-card{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card-benefits{
+        flex-basis: calc(100% / 3.2);
+        margin-bottom: 20px;
+    }
+
+    .card-benefits h2 {
+        font-size: 3rem;
+    }
+
 }
 
 @media  screen and (min-width: 426px) and (max-width: 768px) {
@@ -332,6 +391,22 @@ main{
     .testimonials-info{
         text-align: left;
         padding-left: 20px;
+    }
+
+    /* inizio benefits card */
+
+    .container-benefits-card{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card-benefits{
+        flex-basis: calc(100% / 2.1);
+    }
+
+    .card-benefits h2 {
+        font-size: 3rem;
     }
 
 }
