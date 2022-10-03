@@ -129,6 +129,40 @@ main{
     border-radius: 100%;
 }
 
+/* inizio testimonials */
+
+.testimonials{
+    padding-top: 40px;
+}
+
+.empty-card-testimonials h2{
+    margin: 20px 0;
+    font-size: 1.6rem;
+    color: rgb(149, 147, 230);
+}
+
+.empty-card-testimonials p{
+    line-height: 1.5rem;
+    font-size: 0.9rem
+}
+
+.card-testimonials{
+    background-color: rgb(149, 147, 230);
+    padding: 15px;
+    color: white;
+}
+
+.testimonials-img img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.card-testimonials p{
+    line-height: 1.5rem;
+}
+
+/* INIZIO MEDIA QUERY */
+
 
 @media screen and (max-width: 768px){
     .nav-list{
@@ -220,7 +254,7 @@ main{
         flex-basis: 40%;
     }
 
-
+    /* inizio testimonials */
 
 }
 
