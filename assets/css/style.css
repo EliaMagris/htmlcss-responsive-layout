@@ -150,15 +150,33 @@ main{
     background-color: rgb(149, 147, 230);
     padding: 15px;
     color: white;
+    border-radius:50px;
+    margin: 30px 0;
 }
 
 .testimonials-img img{
     border-radius: 50%;
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.fa-quote-left{
+    padding-right: 5px;
+}
+
+
+.fa-quote-right{
+    padding-left: 5px;
 }
 
 .card-testimonials p{
     line-height: 1.5rem;
+    margin: 15px 0;
+}
+
+.card-testimonials h4{
+    padding: 15px 0;
 }
 
 /* INIZIO MEDIA QUERY */
@@ -256,6 +274,16 @@ main{
 
     /* inizio testimonials */
 
+    .card-testimonials{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .testimonials-info{
+        text-align: left;
+        padding-left: 20px;
+    }
+
 }
 
 @media  screen and (min-width: 426px) and (max-width: 768px) {
@@ -292,6 +320,18 @@ main{
 
     .second-card-row{
         flex-basis: calc(100% / 3.2);
+    }
+
+    /* inizio card testimonials */
+
+    .card-testimonials{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .testimonials-info{
+        text-align: left;
+        padding-left: 20px;
     }
 
 }
