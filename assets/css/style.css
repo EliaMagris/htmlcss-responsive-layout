@@ -16,6 +16,10 @@ header{
     z-index: 1;
 }
 
+.main-color{
+    color: rgb(149, 147, 230)
+}
+
 main{
     padding-top: 80px;
 }
@@ -31,6 +35,7 @@ main{
 
 .container-main img{
     width: 80%;
+    display: block;
 }
 
 .fa-bars{
@@ -138,7 +143,6 @@ main{
 .empty-card-testimonials h2{
     margin: 20px 0;
     font-size: 1.6rem;
-    color: rgb(149, 147, 230);
 }
 
 .empty-card-testimonials p{
@@ -196,12 +200,10 @@ main{
 }
 
 .card-benefits h2 {
-    color: rgb(149, 147, 230);
     font-size: 2rem;
 }
 
 .card-benefits h3 {
-    color: rgb(149, 147, 230);
     font-size: 1.3rem;
     padding: 15px 0;
 }
@@ -221,6 +223,106 @@ main{
     border-radius: 50px;
     color: white;
 }
+
+/* start about us */
+
+.about-us-p h2{
+    padding-bottom:20px;
+}
+
+.about-us-p p{
+    line-height: 1.7rem;
+    padding: 20px 0;
+}
+
+.about-us-img img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-aboutus{
+    position: relative;
+    width: 80%;
+}
+
+.img-aboutus i{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 3.5rem;
+}
+
+.about-us-img h4{
+    padding: 15px 0;
+    font-size: 1.4rem;
+}
+
+.fa-linkedin{
+    padding-right: 5px;
+}
+
+.about-us-img button{
+    color: white;
+    background-color:rgb(149, 147, 230);
+    font-size: 0.7rem;
+    padding: 7px 15px;
+    border-radius: 50px;
+}
+
+.about-us-flex{
+    padding: 40px;
+}
+
+/* inizio footer */
+
+footer{
+    text-align: center;
+}
+
+.container-footer{
+    color: white;
+    padding: 40px 0;
+    line-height: 1.3rem;
+    width: 70%;
+    margin: auto;
+}
+
+.container-footer h2{
+    color: goldenrod;
+    padding: 20px 0;
+    font-size: 2.5rem;
+}
+
+.container-footer h3{
+    padding: 15px 0;
+}
+
+.container-footer p{
+    font-size: 0.7rem;
+    padding: 15px 0;
+}
+
+.container-footer button{
+    background-color: white;
+    color: rgb(149, 147, 230);
+    font-size: 0.9rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: 90%;
+}
+
+.container-footer div{
+    padding: 15px 0;
+    font-size: 0.7rem;
+}
+
+a{
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+
+
 /* INIZIO MEDIA QUERY */
 
 
@@ -343,6 +445,60 @@ main{
         font-size: 3rem;
     }
 
+    /* inizio about us */
+
+    .about-us-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-p{
+        flex-basis: 60%;
+        line-height: 3rem;
+    }
+
+    .about-us-p h2{
+        font-size: 3rem;
+    }
+
+    .about-us-img{
+        flex-basis: 30%;
+        line-height: 2rem;
+    }
+
+    .img-aboutus{
+        width: 100%;
+    }
+
+    .about-us-p p {
+        line-height: 2rem;
+    }
+
+    .img-aboutus i {
+        right: 2rem;
+    }
+
+    .container-footer{
+        width: 35%;
+    }
+
+    .container-footer button {
+        width: 40%;
+    }
+
+    .container-footer h2 {
+        font-size: 3.5rem;
+    }
+
+    .container-footer h3 {
+        padding: 35px 0;
+        font-size: 2rem;
+    }
+
+    .container-footer p{
+        font-size: 1rem;
+    }
+
 }
 
 @media  screen and (min-width: 426px) and (max-width: 768px) {
@@ -381,6 +537,10 @@ main{
         flex-basis: calc(100% / 3.2);
     }
 
+    .strategic-planning h2 {
+        font-size: 3rem;
+    }
+
     /* inizio card testimonials */
 
     .card-testimonials{
@@ -409,4 +569,43 @@ main{
         font-size: 3rem;
     }
 
+    /* start about us */
+
+    .about-us-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-p{
+        flex-basis: 45%;
+        line-height: 3rem;
+    }
+
+    .about-us-p h2{
+        font-size: 3rem;
+    }
+
+    .about-us-img{
+        flex-basis: 40%;
+        line-height: 2rem;
+    }
+
+    /* inizio footer */
+
+    .container-footer button {
+        width: 40%;
+    }
+
+    .container-footer h2 {
+        font-size: 3.5rem;
+    }
+
+    .container-footer h3 {
+        padding: 35px 0;
+        font-size: 2rem;
+    }
+
+    .container-footer p{
+        font-size: 1rem;
+    }
 }
